@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html class="kor">
+<head>
+<title>착한가게24</title>
+<meta name="description" content="착한가게24" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="착한가게24" />
+<meta property="og:description" content="착한가게24" />
+<meta property="og:url" content="착한가게24" />
+<meta name="google-site-verification" content="">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/respond.css" />
+<script type="text/javascript" src="/chackhan24/js/html5.js"></script>
+<script type="text/javascript" src="/chackhan24/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chackhan24/js/global.js"></script>
+<script type="text/javascript" src="/chackhan24/js/java.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/js/placeholder.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/chackhan24/js/sb_board.js"></script>
+<script type="text/javascript" src="/chackhan24/js/web.util.js"></script>
+
+<!-- language 처리 script (현재 언어와 호출 언어가 상이한 경우의 처리) -->
+<script type="text/javascript">
+var href = window.document.location.href;
+var now_language = 'kor';
+if(href.indexOf('http://')!=-1){
+	var protocols = 'http://';
+}
+if(href.indexOf('https://')!=-1){
+	var protocols = 'https://';
+}
+var domain = href.replace(protocols,'');
+if(domain.indexOf('/')!=-1){
+	domain = domain.substring(0,domain.indexOf('/'));
+}
+
+			if(href.indexOf(protocols + domain + "/chn/")!=-1){
+				var call_language = "chn";
+			}
+		
+			if(href.indexOf(protocols + domain + "/eng/")!=-1){
+				var call_language = "eng";
+			}
+		
+			if(href.indexOf(protocols + domain + "/kor/")!=-1){
+				var call_language = "kor";
+			}
+		
+			if(href.indexOf(protocols + domain + "/jpn/")!=-1){
+				var call_language = "jpn";
+			}
+		if(call_language && now_language != call_language){
+	if(href.indexOf('?')!=-1){
+		window.document.location.href = href + '&language=' + call_language;
+	}else{
+		window.document.location.href = href + '?language=' + call_language;
+	}
+}
+</script>
+</head>
+<body class="sub">
+
+	<div id="wrap">
+		<div id="_device_pc"></div>
+<div id="_device_ta"></div>
+<div id="_device_mo"></div>
+
+<!--
+PC,Mobile 공통 header
+-->
+<header id="header">
+	<div class="inner">
+
+		<!-- logo -->
+		<a href="/" class="logo"><h1><img src="/chackhan24/img/logo3.png" alt="착한가게24" /></h1></a>
+
+		<!-- gnb -->
+		<ul id="gnb">
+			<!--
+주소/?laguage=가 kor인 경우 /company/aboutus => _subpage/kor/company/aboutus.php
+주소/?laguage=가 eng인 경우 /company/aboutus => _subpage/eng/company/aboutus.php
+-->
+<li class="">
+	<a href="/">HOME</a>
+</li>
+
+<li class="active">
+	<a href="/chackhan24/manless/startup1.html">무인매장</a>
+	<ul>
+		<li class="active"><a href="/chackhan24/manless/startup1.html">무인창업안내</a></li>
+		<li class=""><a href="/chackhan24/board/interior1.html">인테리어</a></li>
+		<li class=""><a href="/board/review1?ca=무인창업">창업후기</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/pickme/startup2_2">픽미플러스</a>
+	<ul>
+		<li class=""><a href="/pickme/startup2_2">픽미창업안내</a></li>
+		<li class=""><a href="/board/interior2?ca=픽미강점">인테리어</a></li>
+		<li class=""><a href="/board/review2?ca=픽미강점">창업후기</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/store/store">매장현황</a>
+	<ul>
+		<li class=""><a href="/store/store">매장현황</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/board/detail">고객지원</a>
+	<ul>
+		<li class=""><a href="/board/detail">디테일픽미</a></li>
+		<li class=""><a href="/board/media">언론소개</a></li>
+		<li class=""><a href="/board/faq">자주하는 질문</a></li>
+		<li class=""><a href="/board/partner">제휴문의</a></li>
+	</ul>
+</li>
+<li class=" cs">
+	<a href="/customer/inquiry">상담문의</a>
+</li>
+
+<li class=" hidden-gnb">
+	<a href="/doc/policy">약관 및 정책</a>
+	<ul>
+		<li class=""><a href="/doc/policy">이용약관</a></li>
+		<li class=""><a href="/doc/private">개인정보처리방침</a></li>
+		<li class=""><a href="/doc/antiemail">이메일무단수집거부</a></li>
+	</ul>
+</li>
+		</ul>
+
+		<!-- tnb -->
+		<ul id="tnb" style="display: none;">
+						<li><a href="/member/login">로그인</a></li>
+			<li><a href="/member/join">회원가입</a></li>
+			            <li><a href="#" data-ajaxpop="/popup/sitemap">SITEMAP</a></li>
+		</ul>
+
+		<!-- language select -->
+		<div id="hd-lan" style="display: none;">
+			<a href="#">kor</a>
+			<ul>
+								<li><a href="/?language=chn">chn</a></li>
+								<li><a href="/?language=eng">eng</a></li>
+								<li><a href="/?language=jpn">jpn</a></li>
+							</ul>
+		</div>
+
+		<!-- search -->
+		<div id="hd-sch" style="display: none;">
+			<button type="button" class="btn">Search</button>
+			<form action="">
+				<legend>Search</legend>
+				<fieldset>
+					<input type="text" class="inp" name="" id="" placeholder="검색어를 입력하세요." />
+					<button type="submit" class="sbm">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+
+		<!-- slide button -->
+        <div id="slide-btn">
+			<button><span></span></button>
+			Open menu
+		</div>
+
+	</div>
+</header>
+<div id="drdw"><ul class="inner"></ul></div>
+
+
+<!--
+Mobile 햄버거메뉴
+-->
+<div id="slide-menu">
+	<div class="tit">
+
+		<!-- language select -->
+		<div id="hd-lan-mo">
+			<a href="#">kor</a>
+			<ul>
+								<li><a href="/?language=chn">chn</a></li>
+								<li><a href="/?language=eng">eng</a></li>
+								<li><a href="/?language=jpn">jpn</a></li>
+							</ul>
+		</div>
+
+		<!-- search -->
+		<div id="hd-sch-mo">
+			<button type="button" class="btn">Search</button>
+			<form action="">
+				<legend>Search</legend>
+				<fieldset>
+					<input type="text" class="inp" name="" id="" placeholder="검색어를 입력하세요." />
+					<button type="submit" class="sbm">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" id="slide-close"></a>
+
+	</div>
+
+	<!-- tnb -->
+	<ul id="tnb-mo">
+				<li><a href="/member/login">로그인</a></li>
+		<li><a href="/member/join">회원가입</a></li>
+		        <li><a href="#" data-ajaxpop="/popup/sitemap">SITEMAP</a></li>
+	</ul>
+
+	<!-- gnb -->
+	<ul id="gnb-mo">
+		<!--
+주소/?laguage=가 kor인 경우 /company/aboutus => _subpage/kor/company/aboutus.php
+주소/?laguage=가 eng인 경우 /company/aboutus => _subpage/eng/company/aboutus.php
+-->
+<li class="">
+	<a href="/">HOME</a>
+</li>
+
+<li class="active">
+	<a href="/chackhan24/manless/startup1.html">무인매장</a>
+	<ul>
+		<li class="active"><a href="/chackhan24/manless/startup1.html">무인창업안내</a></li>
+		<li class=""><a href="/chackhan24/board/interior1.html">인테리어</a></li>
+		<li class=""><a href="/board/review1?ca=무인창업">창업후기</a></li>
+	</ul>
+</li>
+
+<!-- <li class=""> -->
+<!-- 	<a href="/pickme/startup2_2">픽미플러스</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/pickme/startup2_2">픽미창업안내</a></li> -->
+<!-- 		<li class=""><a href="/board/interior2?ca=픽미강점">인테리어</a></li> -->
+<!-- 		<li class=""><a href="/board/review2?ca=픽미강점">창업후기</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/store/store">매장현황</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/store/store">매장현황</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/board/detail">고객지원</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/board/detail">디테일픽미</a></li> -->
+<!-- 		<li class=""><a href="/board/media">언론소개</a></li> -->
+<!-- 		<li class=""><a href="/board/faq">자주하는 질문</a></li> -->
+<!-- 		<li class=""><a href="/board/partner">제휴문의</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+<li class=" cs">
+	<a href="/customer/inquiry">상담문의</a>
+</li>
+<!--
+<li class="">
+	<a href="/board/notice">게시판</a>
+	<ul>
+		<li class=""><a href="/board/notice">공지사항</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/product/list">제품소개</a>
+	<ul>
+                <li class="">
+			<a href="/product/list?ca_id=01">제품메뉴1</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=02">제품메뉴2</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=03">제품메뉴3</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=04">제품메뉴4</a>
+		</li>
+        	</ul>
+</li>
+<li class="">
+	<a href="/franchise/list">가맹점안내</a>
+	<ul>
+		<li class=""><a href="/franchise/list">가맹점안내</a></li>
+	</ul>
+</li>
+<li class="">
+	<a href="/customer/inquiry">고객센터</a>
+	<ul>
+		<li class=""><a href="/customer/inquiry">온라인문의</a></li>
+	</ul>
+</li>
+-->
+<!--
+서브페이지에 LNB 자동 생성을 위해 GNB 소스코드가 추가 되어야 하지만 GNB에는 노출되지 않길 원하는 경우
+li 에 'hidden-gnb' Class 추가
+-->
+<li class=" hidden-gnb">
+	<a href="/doc/policy">약관 및 정책</a>
+	<ul>
+		<li class=""><a href="/doc/policy">이용약관</a></li>
+		<li class=""><a href="/doc/private">개인정보처리방침</a></li>
+		<li class=""><a href="/doc/antiemail">이메일무단수집거부</a></li>
+	</ul>
+</li>
+	</ul>
+</div>
+<div id="slide-bg"></div>
+
+		<section id="sub">
+
+			<div class="sub-vis" style="background-image: url('/chackhan24/img/ice/ice01.PNG');">
+				<div>
+					<!-- 무인매장					<em>저희 회사를 소개합니다.</em> -->
+					
+					<strong class="tit">창업상담 <a href="">010-6280-8125</a></strong>
+					<strong class="tel">
+<!-- 						<span class="__"><img src="/images/sub/sub-tel02.png" alt="전화">전화번호 클릭시 통화 연결됩니다.</span> -->
+					</strong>
+					
+<!--					<br>-->
+
+<!--					<strong class="tit">창업상담/가맹문의</strong>-->
+<!--					<strong class="tel"><a href="tel:1566-8793">대표번호 1566-8793</a><span><img src="/images/sub/sub-tel02.png" alt="전화">전화번호 클릭시 통화 연결됩니다.</span></strong><br>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-8886-2566">010-8886-2566</a></span>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-6407-0974">010-6407-0974</a></span>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-6356-6606">010-6356-6606</a></span>-->
+				</div>
+			</div>
+
+            <div class="lnbWrap">
+                <ul id="lnb"></ul>
+            </div>
+
+
+			<!-- navigator -->
+			<!-- 
+
+<div id="navigator">
+    <ul>
+    	<li><a href="/"><i class="fa fa-home"></i></a></li>
+    	<li class="d1">
+    		<a href="#">무인매장</a>
+    	</li>
+    	    	<li class="d2">
+    		<a href="#">무인창업안내</a>
+    	</li>
+    	    </ul>
+</div>
+ -->
+
+            <!-- start content -->
+			<div id="content">
+
+				<div class="sub-tit">
+					<h3>무인창업안내</h3>
+					<!-- 
+
+<div id="status">
+	<ul class="inner">
+		<li><a href="/"><i class="fa fa-home"></i> HOME</a></li>
+		<li class="d1">
+			<span class="spr">&gt;</span>
+			<a href="#">무인매장</a>
+		</li>
+				<li class="d2">
+			<span class="spr">&gt;</span>
+			<a href="#">무인창업안내</a>
+		</li>
+			</ul>
+</div>
+ -->
+				</div>
+<style>
+#sub .sub-tit {display: none;}
+#sub #content {width: auto;padding-bottom: 0;}
+</style>
+
+
+<div class="startup1_1">
+	<h4 class="sub_tit1 mt0">무인창업</h4>
+	<div class="inner">
+		<img src="/images/sub/startup1_1-img01.jpg" alt="착한가게24" class="img1">
+		<div class="con">
+			<strong>무인매장 <strong class="red">착한가게24</strong></strong>
+			<p>
+				완벽한 무인매장을 위한 픽미의 노력!<br class="__pc">
+				픽미픽미는 무인매장을 직접 운영하면서 얻은 노하우와 가맹점들과의 끊임없는<br class="__pc">
+				소통으로 점주님들이 가장 필요하고 안정적으로 사용할 수 있는 무인결제<br class="__pc">
+				시스템과 단 하나의 분실물도 없게 만들자는 생각으로 구축한 스마트 픽미 3.0을<br class="__pc">
+				완성하게 되었습니다. 픽미픽미가 추천드리는 가장 안정적이고 합리적인 시스템<br class="__pc">
+				스마트 픽미 3.0을 경험해 보세요.
+			</p>
+		</div>
+		<img src="/images/sub/startup1_1-img02.png" alt="무인 키오스크 솔루션 / 무인 아이스크림 점포 “진짜” 프랜차이즈 전문점의 체계적인 관리를 받으세요." class="img2 __pc">
+		<img src="/images/sub/startup1_1-img02.png" alt="무인 키오스크 솔루션 / 무인 아이스크림 점포 “진짜” 프랜차이즈 전문점의 체계적인 관리를 받으세요." class="img2 __ta">
+		<img src="/images/sub/startup1_1-img02-mo.png" alt="무인 키오스크 솔루션 / 무인 아이스크림 점포 “진짜” 프랜차이즈 전문점의 체계적인 관리를 받으세요." class="img2 __mo">
+	</div>
+</div>
+
+
+<div class="startup1_2">
+	<div class="inner">
+		<h4 class="sub_tit1">무인매장도 PICKME여야 하는 이유</h4>
+		<ul>
+			<li>
+				<img src="/images/sub/startup1_2-img01.jpg" alt="무인키오스크 설치매장">
+			</li>
+			<li>
+				<img src="/images/sub/startup1_2-img02.jpg" alt="무인키오스크 설치매장">
+			</li>
+			<li>
+				<img src="/images/sub/startup1_2-img03.jpg" alt="무인키오스크 설치매장">
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="startup1_3">
+	<div class="inner">
+		<h4 class="sub_tit1 green">Self 주문결재기</h4>
+		<div class="table_sc">
+			<table class="sub_table1 green">
+				<colgroup>
+					<col span="3"style="width:25%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>구분</th>
+						<th>데스크형</th>
+						<th>데스크형</th>
+						<th>스탠드형</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th rowspan="2">
+                            무인시스템 <br />
+                            Self 주문 결재기
+						</th>
+						<!-- <td>
+						                            <img src="/images/sub/startup1_3-img11.jpg" alt="스탠드형">
+						</td> -->
+						<td>
+                            <img src="/images/sub/tartup1_10_1.jpg" alt="데스크형">
+						</td>
+						<td><img src="/images/sub/tartup1_10_2.jpg" alt="데스크형"></td>
+						<td><img src="/images/sub/tartup1_10_3.jpg" alt="스탠드형"></td>
+                        <!--td><img src="/images/sub/startup1_3-img01.jpg" alt="스탠드형"></td-->
+					</tr>
+					<tr>
+                        <td>카드전용</td>
+                        <td>현금/카드 겸용</td>
+                        <td>현금/카드 겸용</td>
+					</tr>
+					<!--
+					<tr>
+						<th>운영사</th>
+						<td class="gray">아이머신</td>
+						<td class="gray">투게더포스</td>
+						<td class="gray">피알컴퍼니</td>
+					</tr>
+					-->
+
+					<tr>
+						<th>구매시 (VAT별도)</th>
+						<td>220만원</td>
+						<td>400만원</td>
+						<td>410만원</td>
+					</tr>
+					<tr>
+						<th>픽미 지원금</th>
+						<td>50%지원</td>
+						<td>200만원(50%지원)</td>
+						<td>150만원 +@ <br />(셀프계산대 간판+안면캠)   </td>
+					</tr>
+
+					<tr>
+						<th class="topR leftR bottomR">가맹점 실구입비(VAT별도)</th>
+						<td class="gray topR bottomR">110만원</td>
+						<td class="gray topR bottomR">200만원</td>
+						<td class="gray topR bottomR rightR">260만원</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="info">※ 전국 아이스크림할인점에서 가장 많이 사용되고 있는 성능이 검증된 모델로 지속적으로 업데이트중 입니다.   </p>
+
+
+        <h4 class="sub_tit1 black">월사용료 조건 (할부구매)</h4>
+		<div class="table_sc">
+			<table class="sub_table1">
+				<colgroup>
+					<col span="3"style="width:25%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>구분</th>
+						<th colspan="2">할부/렌탈</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>월납부금</th>
+						<td><strong>6만원(카드전용)</strong></td>
+						<td><strong>13만원(현금/카드 겸용)</strong></td>
+					</tr>
+					<tr>
+						<th>납부개월수</th>
+						<td>24개월</td>
+						<td>24개월</td>
+					</tr>
+
+					<!--
+					<tr>
+						<th colspan="2">조건</th>
+						<td><strong class="red">2년 후 기계 소유</strong></td>
+						<td><strong class="red">2년 후 기계 소유 없음</strong></td>
+					</tr>
+					-->
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="startup1_5">
+	<div class="inner">
+		<h4 class="sub_tit1 black">무인매장 스마트 픽미 = 1000만원 창업</h4>
+		<p>"1000호점으로 검증된 창업비"</p>
+		<div class="table_sc">
+            <table class="sub_table1">
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>개설비용</th>
+                        <th>내용</th>
+                        <th>지원업체</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>표준점포</th>
+                        <td>-</td>
+                        <td>10평 기준</td>
+                        <td>본사</td>
+                        <td>점포 보유시 본사와 협의 후 결정</td>
+                    </tr>
+                    <tr>
+                        <th>가맹점(교육비)</th>
+                        <td>0원</td>
+                        <td>영업관리,경영기법,교육,상권보호</td>
+                        <td>본사</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>무인키오스크</th>
+                        <td><strong class="red">110만원</strong></td>
+                        <td><strong class="red">픽미지원금 감안 실구매비용</strong></td>
+                        <td>본사</td>
+                        <td>선택이며, 직접 구매가능</td>
+                    </tr>
+                    <tr>
+                        <th>매장관리시스템</th>
+                        <td>월 6만원</td>
+                        <td>Full시스템 설치시 180만원</td>
+                        <td>본사</td>
+                        <td>선택이며, 직접 시공가능</td>
+                    </tr>
+                    <tr>
+                        <th>간판비용</th>
+                        <td>150~200만원</td>
+                        <td>전면사이즈에 따라 가격변동 LED간판 기준</td>
+                        <td>본사</td>
+                        <td>선택이며, 직접 시공가능</td>
+                    </tr>
+                    <tr>
+                        <th>초도상품</th>
+                        <td>450만원</td>
+                        <td>제품비용</td>
+                        <td>각 제조사</td>
+                        <td>각 공급사 월말결제</td>
+                    </tr>
+                    <tr>
+                        <th>인테리어</th>
+                        <td>실비</td>
+                        <td>전면유리 썬팅 & 3면 벽칠등  최소화</td>
+                        <td>본사</td>
+                        <td>선택이며, 직접 시공가능</td>
+                    </tr>
+                    <tr>
+                        <th>냉장고</th>
+                        <td>무상</td>
+                        <td>평수에 따른 냉동고 지급</td>
+                        <td>각제조사</td>
+                        <td></td>
+                    </tr>
+                    <!-- <tr>
+                        <th>오픈패키지</th>
+                        <td>80만원</td>
+                        <td colspan="3">행사제품 2400개 지원,  안내배너,  바구니, 봉투, 블로그홍보</td>
+                    </tr> -->
+                    <tr>
+                        <th>오픈비품</th>
+                        <td>무상</td>
+                        <td>가격표, 바구니, 봉투, 블루투스스피커</td>
+                        <td>본사</td>
+                        <td>오픈일전 서비스지원</td>
+                    </tr>
+                </tbody>
+            </table>
+    		<p class="info tar" style="font-weight:normal;">
+                ※ 세계과자 추가시 300만원 (과자선반+과자제품비) <br>
+                ※ 편의점형 선택시 500만원 (선반+냉장고+제품구색)
+            </p>
+
+		</div>
+
+
+
+	</div>
+</div>
+
+
+
+<div class="startup1_4">
+	<div class="inner">
+		<h4 class="sub_tit1">스마트 픽미 3.0 상세내용</h4>
+
+        <ul>
+            <li><img src="/images/sub/startup1_4-img001.png" /></li>
+            <li><img src="/images/sub/startup1_4-img002.png" /></li>
+            <li><img src="/images/sub/startup1_4-img003.png" /></li>
+            <li><img src="/images/sub/startup1_4-img004.png" /></li>
+            <li><img src="/images/sub/startup1_4-img005.png" /></li>
+            <li><img src="/images/sub/startup1_4-img006.png" /></li>
+            <li style="width: 100%;"><img src="/images/sub/startup1_4-img007.png" /></li>
+        </ul>
+
+		<h5 class="mt45">1. Full 패키지</h5>
+		<div class="con">
+			<img src="/images/sub/startup1_4-img01.jpg" alt="1. 시스템 구축" class="img1">
+			<img src="/images/sub/startup1_4-img02.jpg" alt="1. 시스템 구축" class="img2">
+		</div>
+		<hr class="line">
+		<h5>2. 월정액 패키지<span>장점 : 현장출동 가능, 폐업시 별도 위약금 없는 조건</span></h5>
+		<div class="con">
+			<img src="/images/sub/startup1_4-img03.jpg" alt="2. 캡스활용안" class="img1">
+			<img src="/images/sub/startup1_4-img04.jpg" alt="2. 캡스활용안" class="img2">
+		</div>
+	</div>
+</div>
+
+
+<div class="startup1_6">
+<img src="/images/sub/startup1_6-img01.png" alt="픽미픽미는계약기간내 매장운영이 어려워 계약 해지시 위약금이 없습니다." class="__pc">
+<img src="/images/sub/startup1_6-img01.png" alt="픽미픽미는계약기간내 매장운영이 어려워 계약 해지시 위약금이 없습니다." class="__ta">
+<img src="/images/sub/startup1_6-img01-mo.png" alt="픽미픽미는계약기간내 매장운영이 어려워 계약 해지시 위약금이 없습니다." class="__mo">
+</div>
+			</div>
+		</section>
+
+		<!-- s:footer -->
+		<footer id="footer">
+	<div class="fnbWrap">
+		<div class="inner">
+
+			<!-- fnb -->
+			<ul id="fnb" style="display: none;">
+				<li><a href="/company/aboutus">회사소개</a></li>
+				<li><a href="/company/location">찾아오시는길</a></li>
+								<li><a href="/doc/policy">이용약관</a></li>
+				<li><a href="/doc/private">개인정보처리방침</a></li>
+				<li><a href="/doc/antiemail">이메일무단수집거부</a></li>
+							</ul>
+
+			<!-- body top button -->
+			<a href="#" id="gotop">Go Top</a>
+
+		</div>
+	</div>
+	<div class="ftWrap">
+
+		<!-- address -->
+		<address>
+			
+				착한가게24<hr>대표 : 조영진 / 이메일 : dudwls2612@naver.com<hr />
+
+            	주소 : 서울특별시 강서구 강서로 12길 31(화곡동 341-9)<hr />
+            	TEL : 010-6280-8125<hr />
+		</address>
+
+        <!-- SNS Channels (지우지 마세요. 관리페이지에서 설정한 경우에만 자동 노출)-->
+        
+		<!-- family site -->
+		<div id="ft-fam" style="display: none;">
+			<a href="#">Family site</a>
+			<ul>
+				<li><a href="#" target="_blank">Naver</a></li>
+				<li><a href="#" target="_blank">Daum</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+
+		<!-- e:footer -->
+	</div>
+</body>
+</html>

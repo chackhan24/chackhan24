@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html class="kor">
+<head>
+<title>착한가게24</title>
+<meta name="description" content="착한가게24" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="착한가게24" />
+<meta property="og:description" content="착한가게24" />
+<meta property="og:url" content="착한가게24" />
+<meta name="google-site-verification" content="">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/chackhan24/css/respond.css" />
+<script type="text/javascript" src="/chackhan24/js/html5.js"></script>
+<script type="text/javascript" src="/chackhan24/js/jquery.min.js"></script>
+<script type="text/javascript" src="/chackhan24/js/global.js"></script>
+<script type="text/javascript" src="/chackhan24/js/java.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/js/placeholder.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/chackhan24/js/sb_board.js"></script>
+<script type="text/javascript" src="/chackhan24/js/web.util.js"></script>
+
+<!-- language 처리 script (현재 언어와 호출 언어가 상이한 경우의 처리) -->
+<script type="text/javascript">
+var href = window.document.location.href;
+var now_language = 'kor';
+if(href.indexOf('http://')!=-1){
+	var protocols = 'http://';
+}
+if(href.indexOf('https://')!=-1){
+	var protocols = 'https://';
+}
+var domain = href.replace(protocols,'');
+if(domain.indexOf('/')!=-1){
+	domain = domain.substring(0,domain.indexOf('/'));
+}
+
+			if(href.indexOf(protocols + domain + "/chn/")!=-1){
+				var call_language = "chn";
+			}
+		
+			if(href.indexOf(protocols + domain + "/eng/")!=-1){
+				var call_language = "eng";
+			}
+		
+			if(href.indexOf(protocols + domain + "/kor/")!=-1){
+				var call_language = "kor";
+			}
+		
+			if(href.indexOf(protocols + domain + "/jpn/")!=-1){
+				var call_language = "jpn";
+			}
+		if(call_language && now_language != call_language){
+	if(href.indexOf('?')!=-1){
+		window.document.location.href = href + '&language=' + call_language;
+	}else{
+		window.document.location.href = href + '?language=' + call_language;
+	}
+}
+</script>
+</head>
+<body class="sub">
+
+	<div id="wrap">
+		<div id="_device_pc"></div>
+<div id="_device_ta"></div>
+<div id="_device_mo"></div>
+
+<!--
+PC,Mobile 공통 header
+-->
+<header id="header">
+	<div class="inner">
+
+		<!-- logo -->
+		<a href="/" class="logo"><h1><img src="/chackhan24/img/logo3.png" alt="착한가게24" /></h1></a>
+
+		<!-- gnb -->
+		<ul id="gnb">
+			<!--
+주소/?laguage=가 kor인 경우 /company/aboutus => _subpage/kor/company/aboutus.php
+주소/?laguage=가 eng인 경우 /company/aboutus => _subpage/eng/company/aboutus.php
+-->
+<li class="">
+	<a href="/">HOME</a>
+</li>
+
+<li class="">
+	<a href="/chackhan24/manless/startup1.html">무인매장</a>
+	<ul>
+		<li class=""><a href="/chackhan24/manless/startup1.html">무인창업안내</a></li>
+		<li class=""><a href="/chackhan24/board/interior1.html">인테리어</a></li>
+		<li class=""><a href="/chackhan24/board/review1.html">창업후기</a></li>
+	</ul>
+</li>
+
+<!-- <li class=""> -->
+<!-- 	<a href="/pickme/startup2_2">픽미플러스</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/pickme/startup2_2">픽미창업안내</a></li> -->
+<!-- 		<li class=""><a href="/board/interior2?ca=픽미강점">인테리어</a></li> -->
+<!-- 		<li class=""><a href="/board/review2?ca=픽미강점">창업후기</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/store/store">매장현황</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/store/store">매장현황</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/board/detail">고객지원</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/board/detail">디테일픽미</a></li> -->
+<!-- 		<li class=""><a href="/board/media">언론소개</a></li> -->
+<!-- 		<li class=""><a href="/board/faq">자주하는 질문</a></li> -->
+<!-- 		<li class=""><a href="/board/partner">제휴문의</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+<li class="active cs">
+	<a href="/chackhan24/customer/inquiry.html">상담문의</a>
+</li>
+<!--
+<li class="">
+	<a href="/board/notice">게시판</a>
+	<ul>
+		<li class=""><a href="/board/notice">공지사항</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/product/list">제품소개</a>
+	<ul>
+                <li class="">
+			<a href="/product/list?ca_id=01">제품메뉴1</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=02">제품메뉴2</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=03">제품메뉴3</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=04">제품메뉴4</a>
+		</li>
+        	</ul>
+</li>
+<li class="">
+	<a href="/franchise/list">가맹점안내</a>
+	<ul>
+		<li class=""><a href="/franchise/list">가맹점안내</a></li>
+	</ul>
+</li>
+<li class="active">
+	<a href="/customer/inquiry">고객센터</a>
+	<ul>
+		<li class="active"><a href="/customer/inquiry">온라인문의</a></li>
+	</ul>
+</li>
+-->
+<!--
+서브페이지에 LNB 자동 생성을 위해 GNB 소스코드가 추가 되어야 하지만 GNB에는 노출되지 않길 원하는 경우
+li 에 'hidden-gnb' Class 추가
+-->
+<li class=" hidden-gnb">
+	<a href="/doc/policy">약관 및 정책</a>
+	<ul>
+		<li class=""><a href="/doc/policy">이용약관</a></li>
+		<li class=""><a href="/doc/private">개인정보처리방침</a></li>
+		<li class=""><a href="/doc/antiemail">이메일무단수집거부</a></li>
+	</ul>
+</li>
+		</ul>
+
+		<!-- tnb -->
+		<ul id="tnb" style="display: none;">
+						<li><a href="/member/login">로그인</a></li>
+			<li><a href="/member/join">회원가입</a></li>
+			            <li><a href="#" data-ajaxpop="/popup/sitemap">SITEMAP</a></li>
+		</ul>
+
+		<!-- language select -->
+		<div id="hd-lan" style="display: none;">
+			<a href="#">kor</a>
+			<ul>
+								<li><a href="/?language=chn">chn</a></li>
+								<li><a href="/?language=eng">eng</a></li>
+								<li><a href="/?language=jpn">jpn</a></li>
+							</ul>
+		</div>
+
+		<!-- search -->
+		<div id="hd-sch" style="display: none;">
+			<button type="button" class="btn">Search</button>
+			<form action="">
+				<legend>Search</legend>
+				<fieldset>
+					<input type="text" class="inp" name="" id="" placeholder="검색어를 입력하세요." />
+					<button type="submit" class="sbm">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+
+		<!-- slide button -->
+        <div id="slide-btn">
+			<button><span></span></button>
+			Open menu
+		</div>
+
+	</div>
+</header>
+<div id="drdw"><ul class="inner"></ul></div>
+
+
+<!--
+Mobile 햄버거메뉴
+-->
+<div id="slide-menu">
+	<div class="tit">
+
+		<!-- language select -->
+		<div id="hd-lan-mo">
+			<a href="#">kor</a>
+			<ul>
+								<li><a href="/?language=chn">chn</a></li>
+								<li><a href="/?language=eng">eng</a></li>
+								<li><a href="/?language=jpn">jpn</a></li>
+							</ul>
+		</div>
+
+		<!-- search -->
+		<div id="hd-sch-mo">
+			<button type="button" class="btn">Search</button>
+			<form action="">
+				<legend>Search</legend>
+				<fieldset>
+					<input type="text" class="inp" name="" id="" placeholder="검색어를 입력하세요." />
+					<button type="submit" class="sbm">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<a href="#" id="slide-close"></a>
+
+	</div>
+
+	<!-- tnb -->
+	<ul id="tnb-mo">
+				<li><a href="/member/login">로그인</a></li>
+		<li><a href="/member/join">회원가입</a></li>
+		        <li><a href="#" data-ajaxpop="/popup/sitemap">SITEMAP</a></li>
+	</ul>
+
+	<!-- gnb -->
+	<ul id="gnb-mo">
+		<!--
+주소/?laguage=가 kor인 경우 /company/aboutus => _subpage/kor/company/aboutus.php
+주소/?laguage=가 eng인 경우 /company/aboutus => _subpage/eng/company/aboutus.php
+-->
+<li class="">
+	<a href="/">HOME</a>
+</li>
+
+<li class="">
+	<a href="/chackhan24/manless/startup1.html">무인매장</a>
+	<ul>
+		<li class=""><a href="/chackhan24/manless/startup1.html">무인창업안내</a></li>
+		<li class=""><a href="/chackhan24/board/interior1.html">인테리어</a></li>
+		<li class=""><a href="/chackhan24/board/review1.html">창업후기</a></li>
+	</ul>
+</li>
+
+<!-- <li class=""> -->
+<!-- 	<a href="/pickme/startup2_2">픽미플러스</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/pickme/startup2_2">픽미창업안내</a></li> -->
+<!-- 		<li class=""><a href="/board/interior2?ca=픽미강점">인테리어</a></li> -->
+<!-- 		<li class=""><a href="/board/review2?ca=픽미강점">창업후기</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/store/store">매장현황</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/store/store">매장현황</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+
+<!-- <li class=""> -->
+<!-- 	<a href="/board/detail">고객지원</a> -->
+<!-- 	<ul> -->
+<!-- 		<li class=""><a href="/board/detail">디테일픽미</a></li> -->
+<!-- 		<li class=""><a href="/board/media">언론소개</a></li> -->
+<!-- 		<li class=""><a href="/board/faq">자주하는 질문</a></li> -->
+<!-- 		<li class=""><a href="/board/partner">제휴문의</a></li> -->
+<!-- 	</ul> -->
+<!-- </li> -->
+<li class="active cs">
+	<a href="/chackhan24/customer/inquiry.html">상담문의</a>
+</li>
+<!--
+<li class="">
+	<a href="/board/notice">게시판</a>
+	<ul>
+		<li class=""><a href="/board/notice">공지사항</a></li>
+	</ul>
+</li>
+
+<li class="">
+	<a href="/product/list">제품소개</a>
+	<ul>
+                <li class="">
+			<a href="/product/list?ca_id=01">제품메뉴1</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=02">제품메뉴2</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=03">제품메뉴3</a>
+		</li>
+                <li class="">
+			<a href="/product/list?ca_id=04">제품메뉴4</a>
+		</li>
+        	</ul>
+</li>
+<li class="">
+	<a href="/franchise/list">가맹점안내</a>
+	<ul>
+		<li class=""><a href="/franchise/list">가맹점안내</a></li>
+	</ul>
+</li>
+<li class="active">
+	<a href="/customer/inquiry">고객센터</a>
+	<ul>
+		<li class="active"><a href="/customer/inquiry">온라인문의</a></li>
+	</ul>
+</li>
+-->
+<!--
+서브페이지에 LNB 자동 생성을 위해 GNB 소스코드가 추가 되어야 하지만 GNB에는 노출되지 않길 원하는 경우
+li 에 'hidden-gnb' Class 추가
+-->
+<li class=" hidden-gnb">
+	<a href="/doc/policy">약관 및 정책</a>
+	<ul>
+		<li class=""><a href="/doc/policy">이용약관</a></li>
+		<li class=""><a href="/doc/private">개인정보처리방침</a></li>
+		<li class=""><a href="/doc/antiemail">이메일무단수집거부</a></li>
+	</ul>
+</li>
+	</ul>
+</div>
+<div id="slide-bg"></div>
+
+		<section id="sub">
+
+			<div class="sub-vis" style="background-image: url('/chackhan24/img/ice/ice01.PNG');">
+				<div>
+					<!-- 상담문의					<em>저희 회사를 소개합니다.</em> -->
+					
+					<strong class="tit">창업상담 <a href="">010-6280-8125</a></strong>
+					<strong class="tel">
+<!-- 						<span class="__"><img src="/images/sub/sub-tel02.png" alt="전화">전화번호 클릭시 통화 연결됩니다.</span> -->
+					</strong>
+					
+<!--					<br>-->
+
+<!--					<strong class="tit">창업상담/가맹문의</strong>-->
+<!--					<strong class="tel"><a href="tel:1566-8793">대표번호 1566-8793</a><span><img src="/images/sub/sub-tel02.png" alt="전화">전화번호 클릭시 통화 연결됩니다.</span></strong><br>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-8886-2566">010-8886-2566</a></span>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-6407-0974">010-6407-0974</a></span>-->
+<!--					<span class="tel2"><img src="/images/sub/sub-tel01.png" alt="전화"><a href="tel:010-6356-6606">010-6356-6606</a></span>-->
+				</div>
+			</div>
+
+            <div class="lnbWrap">
+                <ul id="lnb"></ul>
+            </div>
+
+
+			<!-- navigator -->
+			<!-- 
+
+<div id="navigator">
+    <ul>
+    	<li><a href="/"><i class="fa fa-home"></i></a></li>
+    	<li class="d1">
+    		<a href="#">상담문의</a>
+    	</li>
+    	    	<li class="d2">
+    		<a href="#">상담문의</a>
+    	</li>
+    	    </ul>
+</div>
+ -->
+
+            <!-- start content -->
+			<div id="content">
+
+				<div class="sub-tit">
+					<h3>상담문의</h3>
+					<!-- 
+
+<div id="status">
+	<ul class="inner">
+		<li><a href="/"><i class="fa fa-home"></i> HOME</a></li>
+		<li class="d1">
+			<span class="spr">&gt;</span>
+			<a href="#">상담문의</a>
+		</li>
+				<li class="d2">
+			<span class="spr">&gt;</span>
+			<a href="#">상담문의</a>
+		</li>
+			</ul>
+</div>
+ -->
+				</div>
+
+
+	<link rel="stylesheet" type="text/css" href="/superboard/css/sb_common.css"/>
+	<link rel="stylesheet" type="text/css" href="/superboard/css/sb_board.css"/>
+	<link rel="stylesheet" type="text/css" href="/superboard/skin/online/basic/style.css"/>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<!-- 온라인 문의 online basic skin -->
+
+	<div id="sb-wrap">
+
+		<form name="writeform" action="http://i-pickme.co.kr/superboard/process/online/online_update.php" method="post" enctype="MULTIPART/FORM-DATA" autocomplete="off" onsubmit="return formcheck(this)">
+			<input type="hidden" name="selfpage" value="/_subpage/kor/customer/inquiry.php"/>
+			<input type="hidden" name="wm_kind" value="상담문의">
+			<div id="sb-form">
+
+				<!-- s:개인정보처리방침 -->
+				<fieldset>
+					<legend>개인정보처리방침</legend>
+					<div class="privacy"><span class="agr-tit1">제1조 (개인정보 수집에 대한 동의)</span><strong>웹메이커21</strong>(이하 회사)는 이용자들이 회사의 개인정보취급방침 또는 이용약관의 내용에 대하여 &ldquo;동의&rdquo;버튼 또는 &ldquo;취소&rdquo;버튼을 클릭할 수 있는 절차를 마련하여, &ldquo;동의&rdquo;버튼을 클릭하면 개인정보 수집에 대해 동의한 것으로 봅니다. <span class="agr-tit1">제2조 (개인정보 수집항목)</span> 온라인 문의를 통한 상담을 위해 처리하는 개인정보 항목은 아래와 같습니다.<br />
+수집항목 : 성명, 이메일, 전화번호 <span class="agr-tit1">제3조 (개인정보의 이용목적)</span> 회사는 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 원활한 고객상담, 각종 서비스의 제공을 위해 아래와 같이 개인정보를 수집하고 있습니다. 모든 정보는 상기 목적에 필요한 용도 이외로는 사용되지 않으며 수집 정보의 범위나 사용 목적, 용도가 변경될 시에는 반드시 사전 동의를 구할 것입니다.<br />
+<br />
+- 성명 : 제품상담에 따른 본인 확인<br />
+- 이메일, 전화번호 : 제품상담 및 이벤트 관련 고지사항 전달, 새로운 서비스 및 신상품 정보 제공(DM, SMS, 이메일 등 이용)<br />
+<br />
+이용자는 개인정보의 수집/이용에 대한 동의를 거부할 수 있습니다. 다만, 동의를 거부하는 경우 온라인 문의를 통한 상담은 불가하며 서비스 이용 및 혜택 제공에 제한을 받을 수 있습니다. <span class="agr-tit1">제4조 (개인정보의 보유 및 이용기간)</span> 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.<br />
+그리고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법렵의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 정보를 보관합니다.<br />
+이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br />
+<br />
+- 계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br />
+- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래등에서의 소비자 보호에 관한 법률)<br />
+- 시용정보의 수집/처리 및 이용 등에 관한 기록 : 3년(신용정보의 이용 및 보호에 관한 법률)<br />
+- 회사는 귀중한 이용자의 개인정보를 안전하게 처리하며, 유출의 방지를 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.<br />
+- 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br />
+- 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다
+<style type="text/css">.agr-tit1{display: block;margin: 15px 0 10px 0;font-size: 13px;color: #666;font-weight:bold;border-bottom: 1px solid #ddd;padding-bottom:13px;}
+@media screen and (max-width: 750px){
+.agr-tit1{margin: 15px 0 10px 0;font-size: 13px;padding-left: 15px;}
+.agr-tit2{margin: 20px 0;font-size: 13px;}
+.agr-tit3{margin: 20px 0;font-size: 13px;}
+}
+</style>
+</div>
+					<label class="agree">
+						<input type="checkbox" name="agree1" id="agree1" value="Y"/> 개인정보처리방침에 동의합니다.
+					</label>
+				</fieldset>
+				<!-- e:개인정보처리방침 -->
+
+
+				<!-- s:상담내용 작성 -->
+				<fieldset>
+					<legend>상담내용 작성</legend>
+					<table class="form_tbl">
+						<colgroup>
+							<col style="width: 150px;" />
+							<col style="width: auto;" />
+						</colgroup>
+						<tbody>
+						<!--
+							<tr>
+								<th>구분</th>
+								<td>
+									<select name="wm_kind" id="wm_kind">
+										<option value="">상담 구분을 선택하세요.</option>
+										<option value="일반문의">일반문의</option>
+										<option value="견적문의">견적문의</option>
+										<option value="방문문의">방문문의</option>
+									</select>
+								</td>
+							</tr>
+						
+							<tr>
+								<th>회사명</th>
+								<td>
+									<input type="text" name="wm_company" id="wm_company" class="inp" />
+								</td>
+							</tr>
+							-->
+							<tr>
+								<th>작성자명</th>
+								<td>
+									<input type="text" name="wm_name" id="wm_name" class="inp" />
+								</td>
+							</tr>
+
+
+							<tr>
+								<th>이메일</th>
+								<td>
+										<input type="text" name="wm_email1" id="wm_email1" class="inp w50" /> @
+										<input type="text" name="wm_email2" id="wm_email2" class="inp w50" />
+										<select name="wm_email_select" id="wm_email_select" onchange="mail_select(this.value)" >
+											<option value="">직접입력</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="naver.com">naver.com</option>
+											<option value="hanmail.net">hanmail.net</option>
+											<option value="daum.net">daum.net</option>
+										</select>
+								</td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td>
+									<input type="text" name="wm_tel1" id="wm_tel1" class="inp w33" maxlength="4"/> -
+									<input type="text" name="wm_tel2" id="wm_tel2" class="inp w33" maxlength="4"/> -
+									<input type="text" name="wm_tel3" id="wm_tel3" class="inp w33" maxlength="4"/>
+								</td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td>
+									<input type="text" name="wm_title" id="wm_title" class="inp w100" />
+								</td>
+							</tr>
+							<tr>
+								<th>문의내용</th>
+								<td>
+									<textarea name="wm_content" id="wm_content" cols="30" rows="10"></textarea>
+								</td>
+							</tr>
+							<!--
+							<tr>
+								<th>첨부파일</th>
+								<td>
+									<input type="file" name="wm_upfile" id="wm_upfile" class="w100" />
+								</td>
+							</tr>
+							-->
+												</tbody>
+					</table>
+				</fieldset>
+				<!-- e:상담내용 작성 -->
+
+			</div>
+
+			<!-- s:foot button -->
+			<div id="sb-footer">
+				<div class="center">
+					<input type="submit" value="확인" class="sb-btn type1" />
+				</div>
+			</div>
+			<!-- e:foot button -->
+
+		</form>
+
+
+	</div>
+
+<script type="text/javascript">
+
+var regExp = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+function mail_select(val) {
+	$('#wm_email2').val(val);
+}
+
+function formcheck(f) {
+	if ('N' == 'Y') {
+		if (grecaptcha.getResponse() == '') { 
+			alert('자동등록 방지를 확인해주세요.'); return false;
+		}
+	}
+
+	if (!$('input:checkbox[name=agree1]').is(':checked')) {
+		alert("개인정보처리방침에 동의해주세요.");
+		return false;
+	}
+
+	if (f.wm_kind.value == "")
+	{
+		alert("구분을 선택해주세요.");
+		f.wm_kind.focus();
+		return false;
+	}
+
+	if (f.wm_name.value == "")
+	{
+		alert("작성자를 입력해주세요.");
+		f.wm_name.focus();
+		return false;
+	}
+
+	if (f.wm_tel1.value == "")
+	{
+		alert("연락처를 입력해주세요.");
+		f.wm_tel1.focus();
+		return false;
+	}
+
+	if (f.wm_tel2.value == "")
+	{
+		alert("연락처를 입력해주세요.");
+		f.wm_tel2.focus();
+		return false;
+	}
+
+	if (f.wm_tel3.value == "")
+	{
+		alert("연락처를 입력해주세요.");
+		f.wm_tel3.focus();
+		return false;
+	}
+
+	if (checkEngNumValue(f.wm_tel1.value, "연락처는 숫자로만 입력해주세요.", 2) == "N")
+	{
+		f.wm_tel1.focus();
+		return false;
+	}
+
+	if (checkEngNumValue(f.wm_tel2.value, "연락처는 숫자로만 입력해주세요.", 2) == "N")
+	{
+		f.wm_tel2.focus();
+		return false;
+	}
+
+	if (checkEngNumValue(f.wm_tel3.value, "연락처는 숫자로만 입력해주세요.", 2) == "N")
+	{
+		f.wm_tel3.focus();
+		return false;
+	}
+
+	if ($("#wm_email1").val().length < 7) {
+		if (!regExp.test($("#wm_email1").val() + "@" + $("#wm_email2").val())) {
+			alert("이메일 형식에 맞게 입력해주세요.");
+			$("#wm_email2").focus();
+			return false;
+		}
+	}
+
+	if (f.wm_title.value == "")
+	{
+		alert("제목을 입력해주세요.");
+		f.wm_title.focus();
+		return false;
+	}
+
+	if (f.wm_content.value == "")
+	{
+		alert("문의내용을 입력해주세요.");
+		f.wm_content.focus();
+		return false;
+	}
+
+	return true;
+}
+
+</script>
+<!-- 온라인 문의 online basic skin -->
+
+
+
+			</div>
+		</section>
+
+		<!-- s:footer -->
+		<footer id="footer">
+	<div class="fnbWrap">
+		<div class="inner">
+
+			<!-- fnb -->
+			<ul id="fnb" style="display: none;">
+				<li><a href="/company/aboutus">회사소개</a></li>
+				<li><a href="/company/location">찾아오시는길</a></li>
+								<li><a href="/doc/policy">이용약관</a></li>
+				<li><a href="/doc/private">개인정보처리방침</a></li>
+				<li><a href="/doc/antiemail">이메일무단수집거부</a></li>
+							</ul>
+
+			<!-- body top button -->
+			<a href="#" id="gotop">Go Top</a>
+
+		</div>
+	</div>
+	<div class="ftWrap">
+
+		<!-- address -->
+		<address>
+			
+				착한가게24<hr>대표 : 조영진 / 이메일 : dudwls2612@naver.com<hr />
+
+            	주소 : 서울특별시 강서구 강서로 12길 31(화곡동 341-9)<hr />
+            	TEL : 010-6280-8125<hr />
+		</address>
+
+        <!-- SNS Channels (지우지 마세요. 관리페이지에서 설정한 경우에만 자동 노출)-->
+        
+		<!-- family site -->
+		<div id="ft-fam" style="display: none;">
+			<a href="#">Family site</a>
+			<ul>
+				<li><a href="#" target="_blank">Naver</a></li>
+				<li><a href="#" target="_blank">Daum</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+
+		<!-- e:footer -->
+	</div>
+</body>
+</html>
